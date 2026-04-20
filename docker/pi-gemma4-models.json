@@ -1,0 +1,31 @@
+{
+  "providers": {
+    "lichtfeld-gemma4": {
+      "baseUrl": "http://127.0.0.1:8001/v1",
+      "api": "openai-completions",
+      "apiKey": "sk-no-key-required",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false,
+        "supportsUsageInStreaming": false,
+        "maxTokensField": "max_tokens"
+      },
+      "models": [
+        {
+          "id": "gemma-4-e4b-it",
+          "name": "Gemma 4 E4B IT (llama.cpp, docker)",
+          "reasoning": false,
+          "input": ["text", "image"],
+          "contextWindow": 8192,
+          "maxTokens": 4096,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          }
+        }
+      ]
+    }
+  }
+}
